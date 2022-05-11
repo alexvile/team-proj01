@@ -4,4 +4,19 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-@import './example';
+
+@import './components/section';
+@import './utils/variables';
+
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/footer';
+@import './layout/guarantee';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/how-we-do';
+@import './layout/problems';
+@import './layout/program';
+@import './layout/reviews';
+@import './layout/benefits';
+@import './layout/contacts';
