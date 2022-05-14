@@ -1,18 +1,52 @@
-<section>
-  <div class="container">
+<section class="header">
+  <div class="container header__container">
     <nav class="navigation">
       <a href="/" class="logo link">
-        <svg class="logo__icon" width="128ph" height="45ph">
-          <use href="../images/sprite.svg#icon-logo"></use>
+        <svg class="logo__icon" width="128" height="45">
+          <use href="./images/sprite.svg#icon-logo"></use>
         </svg>
       </a>
       <ul class="navigation__list">
-        <li class="list"><a href="" class="navigation__link link"></a></li>
-        <li class="list"><a href="" class="navigation__link link"></a></li>
-        <li class="list"><a href="" class="navigation__link link"></a></li>
-        <li class="list"><a href="" class="navigation__link link"></a></li>
+        <li class="list"><a href="" class="navigation__link link"></a>studying program</li>
+        <li class="list"><a href="" class="navigation__link link"></a>about</li>
+        <li class="list"><a href="" class="navigation__link link"></a>training options</li>
+        <li class="list"><a href="" class="navigation__link link"></a>contacts</li>
       </ul>
+      <button class="navigation__phone-button" type="button">consultation by phone</button>
     </nav>
-    <button class="modal-button" type="button"></button>
+    <button class="modal-button" type="button" data-menu-open>
+      <svg class="modal-button__icon" width="21" height="12">
+        <use href="./images/sprite.svg#icon-menu"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="mt-menu" data-menu>
+    <div class="container mt-menu__container">
+      <a href="/" class="logo-menu link">
+        <svg class="logo-menu__icon" width="128" height="45">
+          <use href="./images/sprite.svg#icon-logo-menu"></use>
+        </svg>
+      </a>
+      <button class="mt-menu__close-button" data-menu-close>
+        <svg class="mt-menu__close-button-icon" width="16" height="16">
+          <use href="./images/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mt-menu__navigation-list">
+        <li class="list">
+          <a href="" class="mt-menu__navigation-link link">Studying program</a>
+        </li>
+        <li class="list">
+          <a href="" class="mt-menu__navigation-link link">About</a>
+        </li>
+        <li class="list">
+          <a href="" class="mt-menu__navigation-link link">Training options</a>
+        </li>
+        <li class="list">
+          <a href="" class="mt-menu__navigation-link link">Contacts</a>
+        </li>
+      </ul>
+      <button class="modal-phone-button" type="button">consultation by phone</button>
+    </div>
   </div>
 </section>
