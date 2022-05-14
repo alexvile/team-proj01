@@ -1,0 +1,179 @@
+.contacts {
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+
+  max-width: 480px;
+  background-image: linear-gradient(180deg, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)),
+    url('../images/DSC_0970_mobile@1x.jpg');
+  background-color: $primary-color;
+
+  &__title {
+    padding-top: 40px;
+
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 130%;
+
+    letter-spacing: 0.03em;
+
+    color: $white-color;
+
+    @media screen and (min-width: 768px) {
+      font-size: 26px;
+    }
+    @media screen and (min-width: 1680px) {
+      padding-top: 80px;
+      padding-left: 278px;
+      padding-right: 278px;
+
+      font-size: 46px;
+    }
+  }
+
+  &__span {
+    color: $accent-color;
+  }
+
+  &__text {
+    padding-top: 24px;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+
+    letter-spacing: 0.08em;
+    color: $white-color;
+
+    @media screen and (min-width: 768px) {
+      padding-left: 148px;
+      padding-right: 148px;
+      padding-top: 40px;
+      font-size: 14px;
+      line-height: 1.21;
+    }
+    @media screen and (min-width: 1680px) {
+      padding-left: 278px;
+      padding-right: 278px;
+      padding-top: 100px;
+
+      font-size: 30px;
+      line-height: 1.23;
+    }
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(180deg, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)),
+      url('../images/DSC_0970_mobile@2x.jpg');
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    background-image: linear-gradient(180deg, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)),
+      url('../images/DSC_0970_tab@1x.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(180deg, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)),
+        url('../images/DSC_0970_tab@2x.jpg');
+    }
+  }
+  @media screen and (min-width: 1680px) {
+    max-width: 1680px;
+    background-image: linear-gradient(180deg, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)),
+      url('../images/DSC_0970_desk@1x.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(180deg, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)),
+        url('../images/DSC_0970_desk@2x.jpg');
+    }
+  }
+
+  @media screen and (min-width: 1680px) {
+    max-width: 1680px;
+  }
+}
+.form {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+
+  &__input-name {
+    margin-bottom: 20px;
+  }
+  &__input-tel {
+    margin-bottom: 40px;
+  }
+
+  & input {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.08em;
+
+    color: $white-color;
+    border: 1px solid $white-color;
+    background: transparent;
+
+    width: 100%;
+    height: 48px;
+    padding-left: 28px;
+
+    &::-webkit-input-placeholder {
+      color: $white-color;
+    }
+    &::-moz-placeholder {
+      color: $white-color;
+    }
+    @media screen and (min-width: 768px) {
+      width: 336px;
+    }
+
+    @media screen and (min-width: 1680px) {
+      width: 528;
+      height: 70px;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 24px;
+  }
+
+  @media screen and (min-width: 1680px) {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+}
+.button {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  min-height: 48px;
+
+  color: $white-color;
+  background-color: $accent-color;
+  @media screen and (min-width: 768px) {
+    width: 336px;
+  }
+
+  @media screen and (min-width: 1680px) {
+    width: 528;
+    height: 70px;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
