@@ -1,5 +1,8 @@
 .logo {
     cursor: pointer;
+    display: inline-block;
+    width: 128px;
+    height: 45px;
 }
 
 .navigation__link {
@@ -10,16 +13,104 @@
     cursor: pointer;
 }
 
-.modal-button {
+.burger-button {
+    // background-color: transparent;
+    // border: none;
+    // padding: 0;
+    // line-height: 0;
+    // cursor: pointer;
+}
+
+.modal-phone-button {
+    cursor: pointer;
+}
+
+.mt-menu {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    background-color: $burg_menu-color;
+    transition: opacity 1250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 1250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mt-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.mt-menu__container {
+    position: relative;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+.mt-menu__close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
     background-color: transparent;
     border: none;
     padding: 0;
     line-height: 0;
     cursor: pointer;
+    fill: $white-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
+}
+
+.mt-menu__navigation-link {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    color: $white-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.mt-menu__navigation-list {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .modal-phone-button {
-    cursor: pointer;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $accent-color;
+    background-color: transparent;
+    border: 2px solid $accent-color;
+    padding-top: 14.5px;
+    padding-bottom: 14.5px;
+    width: 100%;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), ;
+
+    &:hover,
+    &:focus {
+        color: $white-color;
+    }
 }
 
 
@@ -40,105 +131,80 @@
         display: none;
     }
 
-    .modal-button {
-        background-color: transparent;
-        border: none;
-        padding: 0;
-        line-height: 0;
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        cursor: pointer;
+    .burger-button {
+        // background-color: transparent;
+        // border: none;
+        // padding: 0;
+        // line-height: 0;
+        // transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        // cursor: pointer;
 
-        &:hover,
-        &:focus {
-            fill: $accent-color;
-        }
+        // &:hover,
+        // &:focus {
+        //     fill: $accent-color;
+        // }
     }
-        
-    .mt-menu {
-        z-index: 2;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        overflow: auto;
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-        background-color: $burg_menu-color;
-        transition: opacity 1250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 1250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-        
-    .mt-menu.is-open {
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1680px) {
+    .header__container {
+        display: flex;
+        align-items: center;
+        padding-top: 40px;
     }
 
-    .mt-menu__container {
-        position: relative;
-        height: 100vh;
-        padding-top: 20px;
+    .logo {
+        margin-right: 255px;
     }
 
-    .mt-menu__close-button {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        background-color: transparent;
-        border: none;
-        padding: 0;
-        line-height: 0;
-        cursor: pointer;
-        fill: $white-color;
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        
-        &:hover,
-        &:focus {
-            fill: $accent-color;
-        }
+    .navigation {
+        display: flex;
     }
 
-    .mt-menu__navigation-link {
-        font-family: $main-font;
-        font-style: normal;
-        font-weight: 800;
-        font-size: 20px;
-        line-height: 1.8;
-        letter-spacing: 0.03em;
-        color: $white-color;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-        &:hover,
-        &:focus {
-            color: $accent-color;
-        }
+    .navigation__list {
+        display: none;
     }
 
-    .mt-menu__navigation-list {
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-
-    .modal-phone-button {
+    .navigation__phone-button {
         font-family: $main-font;
         font-style: normal;
         font-weight: 700;
-        font-size: 12px;
-        line-height: 1.25;
-        letter-spacing: 0.08em;
+        font-size: 14px;
+        line-height: 1.21;
+        letter-spacing: 0.14em;
         text-transform: uppercase;
         color: $accent-color;
         background-color: transparent;
         border: 2px solid $accent-color;
         padding-top: 14.5px;
         padding-bottom: 14.5px;
-        width: 100%;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),;
-
+        width: 268px;
+        height: 48px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        margin-right: 40px;
+    
         &:hover,
         &:focus {
             color: $white-color;
         }
+    }   
+
+    .mt-menu__container {
+        padding-top: 40px;
+    }
+
+    .mt-menu__close-button {
+        top: 56px;
+        right: 32px;
+    }
+
+    .modal-phone-button {
+        display: none;
+    }
+
+    .mt-menu__navigation-list {
+        margin-top: 80px;
+        margin-bottom: 0;
+        margin-left: 216px;
     }
 }
