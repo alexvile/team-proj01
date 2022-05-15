@@ -5,10 +5,14 @@
 
 // Стили для файла с примером HTML-фрагмента
 @import './utils/variables';
+@import './utils/helpers';
 
-@import './components/container';
 @import './components/base';
+@import './components/container';
+@import './components/section';
 @import './components/modal-window';
+
+
 
 @import './layout/about';
 @import './layout/advantages';
