@@ -158,6 +158,10 @@
   }
 }
 .button {
+  &:hover, &:focus {
+    opacity: 0.8;
+  }
+  
   font-weight: 700;
   font-size: 12px;
   line-height: 1.25;
