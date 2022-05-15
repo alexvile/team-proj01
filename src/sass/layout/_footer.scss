@@ -1,0 +1,116 @@
+.footer {
+  &__contacts {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    text-align: center;
+  }
+  &__contacts-list {
+    padding-left: 32px;
+    padding-right: 32px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+  &__contacts-item {
+    &:not(:last-child) {
+      padding-bottom: 18px;
+      @media screen and (min-width: 767px) {
+        padding-bottom: 0;
+      }
+    }
+
+    &:first-child {
+      @media screen and (min-width: 767px) {
+        margin-right: auto;
+        margin-left: 0;
+      }
+      @media screen and (min-width: 1680px) {
+        margin-right: 26%;
+      }
+    }
+    &:nth-child(2) {
+      @media screen and (min-width: 767px) {
+        padding-right: 40px;
+      }
+    }
+
+    &:nth-child(3) {
+      @media screen and (min-width: 767px) {
+        border-left: 1px solid $secondary-color;
+      }
+      @media screen and (min-width: 1680px) {
+      }
+    }
+
+    &:nth-child(n + 3) {
+      @media screen and (min-width: 767px) {
+        padding-left: 24px;
+      }
+    }
+  }
+}
+
+.footer__phone-link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.08em;
+  color: $primary-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  @media screen and (min-width: 1680px) {
+    font-size: 30px;
+    line-height: 1.23;
+  }
+  &::before {
+    display: inline-block;
+    position: relative;
+    content: ' ';
+
+    top: 6px;
+    background-image: url(../images/phone.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+
+    @media screen and (min-width: 768px) {
+      height: 24px;
+      width: 24px;
+    }
+
+    @media screen and (min-width: 1680px) {
+      height: 30px;
+      width: 30px;
+    }
+  }
+}
+
+.footer__social-icon {
+  border: solid 1px red;
+}
+.footer__logo-icon {
+  @media screen and (min-width: 768px) {
+    width: 128px;
+    height: 45px;
+  }
+}
+
+.copyright {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2;
+  text-align: center;
+  color: $secondary-color;
+  background-color: $primary-color;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
