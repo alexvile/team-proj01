@@ -6,7 +6,7 @@
     }
 }
 
-.section-titel--font {
+.section-title--font {
     padding-bottom: 32px;
 
     font-size: 20px;
@@ -18,10 +18,8 @@
 
     @media screen and (min-width:1680px) {
         padding-bottom: 80px;
-    
         font-size: 46px;
         line-height: 1.3;
-
         text-align: start;
     }
 }
@@ -35,11 +33,12 @@
 
 .how-we-do__item {
     margin: 0 auto;
+    padding-top: 32px;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-bottom: 24px;
     margin-bottom: 16px;
-    padding-top: 25px;
-
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
     box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
     
         &:last-child {
@@ -51,17 +50,16 @@
         }
     
     @media screen and (max-width:767px) {
-        height: 280px;
-        max-width: 440px;
+        width: 100%;
     }
 
     @media screen and (min-width:768px) {
-        height: 336px;
-        width: 336px;
-
+        flex-basis: calc((100% - 32px) / 2);
         margin-right: 32px;
         margin-bottom: 24px;
         padding-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
 
         @media screen and (max-width:1679px) {
             &:nth-child(2n) {
@@ -75,11 +73,13 @@
     }
 
     @media screen and (min-width:1680px) {
-        height: 492px;
-        width: 528px;
+        flex-basis: calc((100% - 32px * 2) / 3);
 
         margin-bottom: 32px;
         padding-top: 90px;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-bottom: 90px;
 
         @media screen and (min-width:1680px) {
             &:nth-child(3n) {
@@ -93,13 +93,13 @@
     }
 }
 
-.how-we-do__item:hover .how-we-do__titel, .how-we-do__item:hover .how-we-do__svg,
+.how-we-do__item:hover .how-we-do__title, .how-we-do__item:hover .how-we-do__svg,
 .how-we-do__item:hover .how-we-do__information {
     color: $white-color;
     fill: $white-color;
 }
 
-.how-we-do__item:hover .how-we-do__titel::after {
+.how-we-do__item:hover .how-we-do__title::after {
     background-color: $white-color;
 }
 
@@ -120,9 +120,8 @@
     fill: $accent-color;
 }
 
-.how-we-do__titel {
+.how-we-do__title {
     position: relative;
-    width: 270px;
     margin: 0 auto;
     margin-bottom: 40px;
     margin-top: 25px;
@@ -151,18 +150,13 @@
     }
 }
 
-.how-we-do__titel--width{
-    width: 250px;
-}
 
-.how-we-do__titel::after {
+.how-we-do__title::after {
     display: inline-block;
-
     position: absolute;
     content: "";
     left: calc(50% - 10px);
     bottom: -25px;
-
     width: 20px;
     height: 2px;
 
@@ -180,9 +174,7 @@
 }
 
 .how-we-do__information {
-    width: 270px;
     margin: 0 auto;
-
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -194,26 +186,20 @@
     
     color: $secondary-color;
 
-    @media screen and (min-width:768px) {
-        width: 295px;
-    }
-
     @media screen and (min-width:1680px) {
-        width: 365px;
-
         font-size: 18px;
         line-height: 1.55;
     }
 }
 
 .how-we-do__information--width {
-    width: 257px;
+    max-width: 260px;
 
     @media screen and (min-width:768px) {
-        width: 285px;
+        max-width: 285px;
     }
 
     @media screen and (min-width:1680px) {
-        width: 365px;
+        max-width: 365px;
     }
 }
