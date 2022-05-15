@@ -7,23 +7,55 @@
 
 .navigation__link {
     cursor: pointer;
+    margin-right: 40px;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.21;
+    text-transform: uppercase;
+    color: $secondary-color;
 }
 
 .navigation__phone-button {
     cursor: pointer;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: $accent-color;
+    background-color: transparent;
+    border: 2px solid $accent-color;
+    padding-top: 14.5px;
+    padding-bottom: 14.5px;
+    width: 268px;
+    height: 48px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-right: 40px;
+
+    &:hover,
+    &:focus {
+        color: $secondary-color;
+    }
 }
 
-// .burger-button {
-//     background-color: transparent;
-//     border: none;
-//     padding: 0;
-//     line-height: 0;
-//     cursor: pointer;
-// }
-
-.modal-phone-button {
+.burger-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
+
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
 }
+
 
 .mt-menu {
     z-index: 2;
@@ -92,6 +124,7 @@
 }
 
 .modal-phone-button {
+    cursor: pointer;
     font-family: $main-font;
     font-style: normal;
     font-weight: 700;
@@ -130,20 +163,6 @@
     .navigation__phone-button {
         display: none;
     }
-
-    .burger-button {
-        background-color: transparent;
-        border: none;
-        padding: 0;
-        line-height: 0;
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        cursor: pointer;
-
-        &:hover,
-        &:focus {
-            fill: $accent-color;
-        }
-    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1679px) {
@@ -164,30 +183,6 @@
     .navigation__list {
         display: none;
     }
-
-    .navigation__phone-button {
-        font-family: $main-font;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.21;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        color: $accent-color;
-        background-color: transparent;
-        border: 2px solid $accent-color;
-        padding-top: 14.5px;
-        padding-bottom: 14.5px;
-        width: 268px;
-        height: 48px;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        margin-right: 40px;
-    
-        &:hover,
-        &:focus {
-            color: $white-color;
-        }
-    }   
 
     .mt-menu__container {
         padding-top: 40px;
@@ -223,18 +218,8 @@
         margin-right: 496px;
     }
 
-    .list {
-        margin-right: 40px;
-        font-family: $main-font;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.21;
-        text-transform: uppercase;
-        color: $secondary-color;
-    }
-
     .burger-button {
         display: none;
     }
+    
 }
