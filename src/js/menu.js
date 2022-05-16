@@ -19,7 +19,7 @@
       return
     }
     if(e.target.classList.contains('mt-menu__navigation-link')) {
-      refs.menu.classList.toggle('is-open');
+      refs.menu.classList.remove('is-open');
     }
   }
 })();
