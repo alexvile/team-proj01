@@ -1,0 +1,102 @@
+.section-our-program {
+    background-color: #111518;
+    width: 320px;
+    padding-top: 40px;
+    padding-bottom: 600px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.our-program__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.our-program__list-item-title {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 4px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    &::before {
+        content: '';
+        width: 12px;
+        height: 12px;
+        background-color: #FF6B09;
+        border-radius: 50%;
+        position: absolute;
+        left: -6px;
+    }
+}
+
+.our-program__list-item-name {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 164.9%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.08em;
+    color: #FF6B09;
+    margin-bottom: 4px;
+    &::before {
+        content: '';
+        width: 12px;
+        height: 1px;
+        background-color: #FF6B09;
+        margin-right: 5px;
+    }
+}
+
+.our-program__list-item-desc {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.08em;
+        opacity: 0.5;
+    color: #B9B9B9;
+    margin-bottom: 4px;
+}
+
+.our-program__list {
+    width: 202px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-left: 26px;
+    &::before {
+            content: '';
+            display: block;
+            background-color: #FFFFFF;
+            height: 1098px;
+            width: 1px;
+            position: absolute;
+            top: 9px;
+            left: 0px;
+        }
+}
+
+.our-program__list-wrapper::after {
+    content: '';
+    display: block;
+    width: 176px;
+    height: 137px;
+    background-size: cover;
+    background-image: url(../../images/our-program-mobile.jpeg);
+}
