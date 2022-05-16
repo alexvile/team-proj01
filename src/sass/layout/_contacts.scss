@@ -186,3 +186,6 @@
     line-height: 1.21;
   }
 }
+.form__input:focus::placeholder {
+  color: transparent;
+}
