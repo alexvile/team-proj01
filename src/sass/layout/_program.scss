@@ -1,5 +1,5 @@
 .program {
-    background: var(--secondary-background-color);
+    background: var($primary-color);
 }
 
 .program__title {
@@ -11,7 +11,7 @@
     line-height: 1.30;
     letter-spacing: 0.03em;
 
-    color: var(--third-text-color);
+    color: var($white-color);
 }
 
 .program__container {
@@ -20,7 +20,7 @@
 
     &::before {
         content: "";
-        border-left: 1px solid var(--third-text-color);
+        border-left: 1px solid var($white-color);
         height: 1245px;
         transform: translate(0, 7px);
     }
@@ -44,7 +44,7 @@
     line-height: 2;
     text-transform: uppercase;
 
-    color: var(--third-text-color);
+    color: var($white-color);
 
     &::before {
         content: "";
@@ -52,7 +52,7 @@
         width: 12px;
         height: 12px;
         border-radius: 7.5px;
-        background-color: var(--accent-color);
+        background-color: var($accent-color);
 
         position: absolute;
         transform: translate(-32px, 7px);
@@ -73,7 +73,7 @@
     font-size: 12px;
     line-height: 1.65;
 
-    color: var(--accent-color);
+    color: var($accent-color);
 
     &::before {
         content: "";
@@ -82,7 +82,7 @@
         width: 12px;
         height: 1px;
         margin-right: 5px;
-        background-color: var(--accent-color);
+        background-color: var($accent-color);
     }
 }
 
@@ -163,7 +163,7 @@
 @media screen and (min-width: $desktop) {
     .program__container {
         display: block;
-        border-top: 1px solid var(--third-text-color);
+        border-top: 1px solid var($white-color);
 
         &::before {
             display: none;
