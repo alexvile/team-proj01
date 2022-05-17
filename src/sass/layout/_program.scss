@@ -2,14 +2,6 @@
     background-color: $primary-color;
 }
 
-.program__container {
-    padding-left: 88px;
-    padding-right: 88px;
-    padding-top: 40px;
-    padding-bottom: 105px;
-    position: relative;
-}
-
 .section-title {
     font-family: $main-font;
     font-style: normal;
@@ -86,9 +78,9 @@
 .main-list {
     &::after{
         content: '';
-        background-image: url("./images/program-section-bg.jpg");
+        background-image: url("../images/program-section-bg.jpg");
         background-repeat: no-repeat;
-        display: inline-block;
+        display: block;
         opacity: 0.5;
         width: 150px;
         height: 137px;
@@ -98,6 +90,54 @@
     }
 }
 
-// @media screen and (min-width: 768px) and (max-width: 1679px) {
+@media screen and (min-width: 768px) and (max-width: 1679px) {
+    .secondary-list {
+        display: flex;
+        margin-left: 119px;
+    }
 
-// }
+    .section-title {
+        display: inline-block;
+    }
+
+    .program__container {
+        padding-bottom: 180px;
+        padding-top: 60px;
+        padding-left: 97px;
+    }
+
+    .secondary-list__item {
+        margin-right: 32px;
+        width: 152px;
+    }
+
+    .main-list__title {
+        &::before {
+            margin-right: 107px;
+        }
+    }
+
+    .main-list{
+        position: relative;
+        &::after {
+            content: '';
+            background-image: url("../images/program-section-bg-tablet.jpg");
+            width: 368px;
+            height: 268px;
+            display: block;
+            opacity: 0.5;
+            bottom: -180px;
+            right: -32px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .program__container {
+        padding-left: 88px;
+        padding-right: 88px;
+        padding-top: 40px;
+        padding-bottom: 105px;
+        position: relative;
+    }
+}
