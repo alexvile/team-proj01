@@ -88,11 +88,12 @@
         content: '';
         background-image: url("/images/program-section-bg.jpg");
         background-repeat: no-repeat;
-        display: block;
-        width: 176px;
+        display: inline-block;
+        opacity: 0.5;
+        width: 150px;
         height: 137px;
         position: absolute;
         bottom: 0;
-        right: -26px;
+        right: 0;
     }
 }
