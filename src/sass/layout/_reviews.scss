@@ -16,6 +16,7 @@
 
 .mySwiper {
     padding-top: 10px;
+    padding-bottom: 10px;
     @media screen and (max-width: 767px) {
         max-width: 190px;
     }
@@ -37,13 +38,16 @@
 
 .mySwiper .swiper-slide-thumb-active {
     opacity: 1;
+    outline: 1px solid $accent-color;
+    border-color: $accent-color;
+    border-radius: 50%;
 }
 
 .swiper-slide img {
     display: block;
     width: 54px;
     height: 54px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .mySwiper .swiper-slide-thumb-active {
@@ -52,7 +56,6 @@
 
 .mySwiper2 .swiper-slide {
    padding: 20px;
-    outline: 1px solid green;
 
     @media screen and (min-width: 768px){
         box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
@@ -155,4 +158,22 @@
     }
 }
 
-
+.swiper-button-next {
+    color: transparent;
+    background-image: url(../images/arrow-right.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.swiper-button-prev {
+    color: transparent;
+    background-image: url(../images/arrow-left.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    top: 100%;
+    @media screen and (min-width: 768px) {
+        top: 50%;
+    }
+}

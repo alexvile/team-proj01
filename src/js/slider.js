@@ -27,7 +27,7 @@ var swiper = new Swiper(".mySwiper", {
     // when window width is >= 640px
     768: {
       slidesPerView: 7,
-      spaceBetween: 40
+      spaceBetween: 35
     }
   },
   freeMode: true,
