@@ -1,15 +1,17 @@
 .benefits {
 	padding: 20px 0;
-	background: linear-gradient(to bottom, $primary-color 65%, $white-color 25%);
+	background: linear-gradient(to bottom, $primary-color 55%, $white-color 45%);
 
 	@media screen and (min-width: 768px) {
-		padding: 40px 0;
+		padding-bottom: 40px;
+		padding-top: 80px;
 		background: linear-gradient(to bottom, $primary-color 44%, $white-color 25%);
 	}
 
 	@media screen and (min-width: 1679px) {
-		padding: 60px 0;
-		background: linear-gradient(to bottom, $primary-color 50%, $white-color 50%);
+		padding-bottom: 0;
+		padding-top: 0;
+		background: linear-gradient(to bottom, $primary-color 60%, $white-color 40%);
 	}
 }
 
@@ -30,7 +32,7 @@
 	}
 
 	@media screen and (min-width: 1679px) {
-		font-size: 45px;
+		display: none;
 	}
 }
 

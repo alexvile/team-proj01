@@ -14,3 +14,22 @@ function toggleModal() {
     refs.modal.classList.toggle("is-hidden");
 }
 })();
+
+
+
+
+
+(() => {
+const refs = {
+    openModalBtnC: document.querySelector(".js-certific-open"),
+    closeModalBtnC: document.querySelector(".js-certific-close"),
+    modalC: document.querySelector(".js-certific"),
+};
+
+refs.openModalBtnC.addEventListener("click", toggleModalC);
+refs.closeModalBtnC.addEventListener("click", toggleModalC);
+
+function toggleModalC() {
+    refs.modalC.classList.toggle("is-hidden");
+}
+})();
