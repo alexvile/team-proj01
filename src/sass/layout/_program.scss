@@ -86,7 +86,7 @@
 .main-list {
     &::after{
         content: '';
-        background-image: url("/images/program-section-bg.jpg");
+        background-image: url("./images/program-section-bg.jpg");
         background-repeat: no-repeat;
         display: inline-block;
         opacity: 0.5;
@@ -97,3 +97,7 @@
         right: 0;
     }
 }
+
+// @media screen and (min-width: 768px) and (max-width: 1679px) {
+
+// }
