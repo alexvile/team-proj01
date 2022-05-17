@@ -15,12 +15,13 @@
     }
 }
 .navigation__link {
+
     cursor: pointer;
     margin-right: 40px;
     font-family: $main-font;
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.21;
     text-transform: uppercase;
     color: $secondary-color;
@@ -37,7 +38,7 @@
     font-family: $main-font;
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.21;
     letter-spacing: 0.14em;
     text-transform: uppercase;
