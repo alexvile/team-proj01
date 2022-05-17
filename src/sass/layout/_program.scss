@@ -98,6 +98,9 @@
 
     .section-title {
         display: inline-block;
+        font-size: 26px;
+        line-height: 1.3;
+        letter-spacing: 0.03em;
     }
 
     .program__container {
@@ -129,6 +132,96 @@
             bottom: -180px;
             right: -32px;
         }
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    .program__container {
+        padding-top: 80px;
+        padding-bottom: 237px;
+        padding-left: 32px;
+        padding-right: 32px;
+        position: relative;
+    }
+
+    .section-title {
+        display: inline-block;
+        font-size: 46px;
+        line-height: 1.3;
+        letter-spacing: 0.03em;
+        margin-bottom: 88px;
+    }
+
+    .main-list__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.4;
+        letter-spacing: 0.08em;
+        margin-bottom: 24px;
+
+        &::before {
+            position: absolute;
+            top: -40px;
+            width: 17.14px;
+            height: 16px;
+        }
+    }
+
+    .secondary-list__item {
+        margin-bottom: 24px;
+    }
+
+    .secondary-list__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.65;
+        letter-spacing: 0.08em;
+        margin-bottom: 8px;
+
+        &::before {
+            width: 15px;
+            margin-bottom: 6px;
+        }
+    }
+
+    .secondary-list__text {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.5;
+        letter-spacing: 0.08em;
+    }
+
+    .main-list {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        &::after {
+            content: '';
+            background-image: url("../images/program-section-bg-desktop.jpg");
+            width: 684px;
+            height: 381px;
+            opacity: 0.5;
+            position: absolute;
+            bottom: -237px;
+            left: -188px;
+        }
+    }
+    
+    .wrapper {
+        width: 1368px;
+        margin-left: 156px;
+    }
+
+    .main-list__item {
+        width: 240px;
+    }
+
+    .decorate {
+        border: 1px solid $white-color;
+        position: absolute;
+        width: 100%;
+        top: 195px;
+        left: 0;
     }
 }
 
