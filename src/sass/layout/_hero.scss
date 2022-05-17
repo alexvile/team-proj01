@@ -82,8 +82,7 @@
 
 .hero-button {
   background: $accent-color;
-  width: 280px;
-  height: 48px;
+  max-width: 280px;
   display: block;
   margin: 0 auto;
   margin-bottom: 40px;
@@ -94,6 +93,7 @@
   line-height: 1.25;
   color: #fff;
   text-transform: uppercase;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width:768px) {
     margin: 0;
@@ -102,6 +102,9 @@
   @media screen and (min-width:1680px) {
     font-size: 14px;
     line-height: 1.2;
+  }
+  &:hover, &:focus {
+    opacity: .8;
   }
 }
 
