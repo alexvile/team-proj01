@@ -50,6 +50,7 @@
 
         &:hover, &:focus {
             background-color: $accent-color;
+            cursor: pointer;
         }
     
     @media screen and (max-width:767px) {
