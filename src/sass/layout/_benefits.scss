@@ -1,9 +1,8 @@
 .benefits {
-	padding: 20px 0;
+	padding-top: 20px;
 	background: linear-gradient(to bottom, $primary-color 55%, $white-color 45%);
 
 	@media screen and (min-width: 768px) {
-		padding-bottom: 40px;
 		padding-top: 80px;
 		background: linear-gradient(to bottom, $primary-color 44%, $white-color 25%);
 	}

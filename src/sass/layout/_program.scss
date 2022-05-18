@@ -86,7 +86,7 @@
         background-repeat: no-repeat;
         display: block;
         opacity: 0.5;
-        width: 150px;
+        width: 140px;
         height: 137px;
         position: absolute;
         bottom: 0;
@@ -96,7 +96,7 @@
 
 .decorate {
     border: 1px solid $white-color;
-    height: 1052px;
+    height: calc(100% - 319px);
     width: 0;
     position: absolute;
     left: 93px;
@@ -246,7 +246,7 @@
     .decorate {
         border: 1px solid $white-color;
         position: absolute;
-        width: 100vw;
+        width: 120%;
         height: 0;
         top: 195px;
         left: -97.5px;
