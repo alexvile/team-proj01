@@ -1,4 +1,8 @@
 .problems__wrapper {
+    padding-top: 24px;
+    @media screen and (min-width:768px) {
+        padding-top: 40px;
+    }
     @media screen and (max-width: 1679px) {
         background: linear-gradient(to bottom , $primary-color 75%, $white-color 25%);   
     }
@@ -7,6 +11,7 @@
         background-image: url(../images/campfire.svg), linear-gradient(to bottom, $primary-color 75%, $white-color 25%);
         background-repeat: no-repeat, no-repeat;
         background-position: bottom 176px right, bottom right;
+        padding-top: 80px;
     }
 }
 .problems__section {
