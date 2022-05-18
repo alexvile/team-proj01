@@ -60,7 +60,9 @@
 }
 
 .secondary-list__item {
-    margin-left: 26px;
+    &:not(:last-child) {
+            margin-bottom: 4px;
+    }
 }
 
 .secondary-list__text {
@@ -72,7 +74,6 @@
     line-height: 1.6;
     letter-spacing: 0.08em;
     opacity: 0.5;
-    margin-bottom: 4px;
 }
 
 .main-list__item:not(:last-child) {
@@ -85,7 +86,7 @@
         background-image: url("../images/program-section-bg.jpg");
         background-repeat: no-repeat;
         display: block;
-        opacity: 0.5;
+        // opacity: 0.5;
         width: 140px;
         height: 137px;
         position: absolute;
@@ -96,11 +97,11 @@
 
 .decorate {
     border: 1px solid $white-color;
-    height: calc(100% - 319px);
+    height: calc(100% - 171px);
     width: 0;
     position: absolute;
     left: 93px;
-    top: 124px;
+    top: 84px;
 }
 
 .program__container {
@@ -120,10 +121,10 @@
         letter-spacing: 0.03em;
     }
 
-    .program__container {
+    .program {
         padding-bottom: 180px;
         padding-top: 60px;
-        padding-left: 97px;
+        // padding-left: 97px;
         position: relative;
     }
 
@@ -148,7 +149,8 @@
             display: block;
             opacity: 0.5;
             bottom: -180px;
-            right: -32px;
+            right: 0;
+            position: absolute;
         }
     }
 
@@ -156,14 +158,18 @@
         border: 1px solid $white-color;
         height: 704px;
         position: absolute;
-        left: 102px;
-        top: 142px;
+        left: 37px;
+        top: 93px;
         transform-origin: top center;
     }
+
+    // .container {
+    //     width: 100%;
+    // }
 }
 
 @media screen and (min-width: 1680px) {
-    .program__container {
+    .program {
         padding-top: 80px;
         padding-bottom: 237px;
         padding-left: 32px;
@@ -246,9 +252,9 @@
     .decorate {
         border: 1px solid $white-color;
         position: absolute;
-        width: 120%;
+        width: 100%;
         height: 0;
-        top: 195px;
+        top: 116px;
         left: -97.5px;
     }
 }
@@ -257,8 +263,16 @@
     .program__container {
         padding-left: 88px;
         padding-right: 88px;
+        
+        position: relative;
+    }
+
+    .program {
         padding-top: 40px;
         padding-bottom: 105px;
-        position: relative;
+    }
+
+    .secondary-list {
+        margin-left: 32px;
     }
 }
